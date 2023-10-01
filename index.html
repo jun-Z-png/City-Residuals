@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+            City Residuals
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="mystyle.css">
+        
+        <style>
+            /* body {
+                overflow: hidden;
+                margin: 0px;
+            } */
+        </style>
+        
+        
+        
+    </head>
+
+    <body >
+        <video autoplay loop muted poster="" id="vid">
+            <source src="image/backdrop.mp4" type="video/mp4">
+         </video>
+         
+        
+        <canvas id="threejscanvas" width=window.screen.width height=window.screen.height></canvas>
+        <script type="module" src="bundle.js"></script>
+        <canvas id="canvas" width=window.screen.width height=window.screen.height></canvas>
+        <script  src="index.js"></script>
+        <!-- <canvas id="canvas2" width=window.screen.width height=window.screen.height></canvas>
+        <script  src="index2.js"></script> -->
+        
+            <a id="toggleButton" onclick="toggleText();" >About</a>
+            <div id="about">
+            <p class="textArea">City Residuals is an interactive web art project designed, modeled,and developed by <a href="https://junzhou.info/">Jun Zhou.</a></p>
+            <p class="textArea">Navigate yourself by the mouse and interact with the purple blocks and the interface to curate your own experience.</p>
+            <p class="textArea ascii">
+                _~(``)_(````)__            |`````|  ^^  ||
+               (._      __      ___..)       | o o |    /`o`\    ~~~
+                   ~__) (__)``      ^~     | o o |   | # # |
+                                                    | [  ]  |   | [ ]# |
+            </p>
+            <p class="textArea">Bon Voyage!</p>
+            <a id="toggleButtonless" onclick="toggleTextless();" >See Less</a>
+            
+            <script>
+                var status = "less";
+                document.getElementById("about").style.visibility = "hidden";
+function toggleText()
+{
+
+
+// if (status == "less") {
+// document.getElementById("toggleButtonless").style.visibility = "visible";
+document.getElementById("about").style.visibility = "visible";
+// status = "more";
+// } else if (status == "more") {
+// document.getElementById("toggleButtonless").style.visibility="hidden";
+// document.getElementById("textArea").style.visibility="hidden";
+// status = "less"
+// }
+}
+function toggleTextless(){
+    // if (status == "more") {
+// document.getElementById("textArea").innerHTML="";
+document.getElementById("about").style.visibility = "hidden";
+// document.getElementById("toggleButtonless").style.visibility = "hidden";
+// status = "less";
+}
+            </script>
+            <script  src="index2.js"></script>
+        </div>
+        <!-- <div>
+            <img id="img" src="image/Frame 7.png" style="display: none;"></img>
+            
+        </div> -->
+        
+        
+        
+        
+        
+    </body>
+</html>

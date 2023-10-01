@@ -1,0 +1,99 @@
+/* body {
+    background-image: url("image/testbg.png");
+    /* Full height */
+  /* height: 100%; 
+
+  /* Center and scale the image nicely */
+
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  } */ 
+
+  video#vid {
+    position: fixed; 
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+    z-index: -100;
+    background-size: cover;
+    margin: 0 auto;
+    filter: brightness(30%);
+    }
+
+ #canvas{
+    position:fixed;
+    z-index: 3;
+    margin:0;
+    padding:0;
+    mix-blend-mode: difference;
+    background-color: ghostwhite;
+}
+#canvas2{
+  position:fixed;
+  z-index: 3;
+  margin:0;
+  right:0;
+  padding:0;
+}
+#about{
+  position:fixed;
+  z-index: 2;
+  margin:0;
+  right:0;
+  top: 60px;
+  padding:10px;
+  background-color:ghostwhite;
+  word-wrap: normal;
+  width:400px;
+  z-index: 2;
+  
+}
+
+#threejscanvas{
+  position:fixed;
+  z-index: 0;
+  width: auto; 
+  height: auto; 
+}
+
+#toggleButton{
+z-index: 2;
+color:black;
+background-color: ghostwhite;
+font-size:x-large;
+padding:10px;
+position: fixed;
+right:20px;
+font-family: 'Averia Serif Libre', cursive;
+}
+#toggleButton:hover{
+  text-shadow: rgba(34, 235, 233, 1) 3px 3px 6px;
+
+}
+.textArea{
+  font-family: 'Averia Serif Libre', cursive;
+  color:black;
+  text-shadow: rgba(34, 235, 233, 1) 2px 2px 5px;
+  padding:10px;
+}
+.ascii{
+  white-space: pre;
+}
+
+#toggleButtonless{
+  z-index: 2;
+  color:black;
+  background-color: ghostwhite;
+  padding:10px;
+  font-family: 'Averia Serif Libre', cursive;
+  text-shadow: yellow 2px 2px 5px;
+  
+}
+
+
+/* #toggleBottonless:hover{
+  text-shadow: rgba(34, 235, 233, 1) 2px 2px 5px;
+} */
