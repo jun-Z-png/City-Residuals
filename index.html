@@ -32,6 +32,8 @@
         <script type="module" src="bundle.js"></script>
         <canvas id="canvas" width=window.screen.width height=window.screen.height></canvas>
         <script  src="index.js"></script>
+            <a id="startButton" onclick="toggleScene();">Play</a>
+  
         <!-- <canvas id="canvas2" width=window.screen.width height=window.screen.height></canvas>
         <script  src="index2.js"></script> -->
         
@@ -51,6 +53,9 @@
             <script>
                 var status = "less";
                 document.getElementById("about").style.visibility = "hidden";
+                function toggleScene(){
+                    document.getElementById("startButton").style.visibility="hidden";
+                }
 function toggleText()
 {
 

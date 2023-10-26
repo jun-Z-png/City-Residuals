@@ -13,28 +13,23 @@ canvas.onclick = function() {
 
 
 function draw(e){
-   //mouse position
     var x = e.clientX ;
     var y = e.clientY ;
-    //clear canvas
     ctx.clearRect(0,0,window.screen.width,window.screen.height);
-    //draw circle
     ctx.strokeStyle = 'yellow';
-  
-    
     ctx.lineWidth = 3;
     ctx.beginPath();
     ctx.moveTo(0, y);
     ctx.lineTo(window.screen.width, y);
     ctx.stroke();
-  ctx.beginPath();
+    ctx.beginPath();
     ctx.moveTo(x, 0);
     ctx.lineTo(x, window.screen.height);
     ctx.stroke();
-   ctx.fillStyle="yellow";
+    ctx.fillStyle="yellow";
     ctx.fillRect(x,y-10,40,10);
-  ctx.fillStyle="black";
-  ctx.fillText(x+","+y, x,y);
+    ctx.fillStyle="black";
+    ctx.fillText(x+","+y, x,y);
   
  
   

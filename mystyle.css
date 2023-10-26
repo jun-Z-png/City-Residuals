@@ -52,6 +52,22 @@
   
 }
 
+#startButton{
+  z-index: 2;
+color:black;
+background-color: ghostwhite;
+font-size:x-large;
+padding:10px;
+position: fixed;
+right:50%;
+top:50%;
+font-family: 'Averia Serif Libre', cursive;
+
+}
+#startButton:hover{
+  text-shadow: rgba(34, 235, 233, 1) 3px 3px 6px;
+
+}
 #threejscanvas{
   position:fixed;
   z-index: 0;
